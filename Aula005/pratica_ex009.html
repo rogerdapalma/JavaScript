@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto</title>
+</head>
+<body>
+    <h1>Sistema de checking</h1>
+    Seu pais é ? : <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Vereficar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var ver = window.document.getElementById('txtp')
+            //var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = String(ver.value)
+            res.innerHTML = `<p>Seu pais é <strong>${vel}!!! </strong></p>`
+            if (vel != 'brasil') {
+                res.innerHTML += `<p>Voce é <strong> Estrangeiro </strong> </p>`
+            } else{
+                res.innerHTML += `<p>Voce é <strong> Brasileiro </strong> </p>`
+            }
+            res.innerHTML += `<p>Boa viagem !!! </p>`
+
+
+        }
+    </script>
+</body>
+</html>
