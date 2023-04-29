@@ -1,3 +1,4 @@
+//Aprendendo sobre estrutura condicional alinhada
 var agora = new Date() 
 var hora = agora.getHours() //hora atual do cliente
 console.log(`Atualmente são exatamente ${hora} Horas.`)

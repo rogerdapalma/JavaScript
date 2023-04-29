@@ -1,3 +1,4 @@
+//Aprendendo sobre estrutura condição multipla
 var agora = new Date()
 var DiaSem = agora.getDay()
 /*
