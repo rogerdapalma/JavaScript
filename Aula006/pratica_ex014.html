@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica das condições!!!</title>
+    <style>
+       body {
+           
+            color: rgb(255, 255, 255);
+            font: normal 20pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1> <div id="res">
+
+    </h1>
+
+    </div>
+    <script>
+            var res = window.document.querySelector('div#res')
+            var meuElemento = document.getElementById("res");
+            var agora = new Date() 
+            var hora = agora.getHours() //hora atual do cliente
+            if (hora <12){
+                res.innerHTML = `<p> São <strong>${hora} </strong> Horas </p>`
+                meuElemento.style.backgroundColor = "blue";
+            } else if (hora <= 18) {
+                res.innerHTML = `<p> São <strong>${hora} </strong> Horas </p>`
+                meuElemento.style.backgroundColor = "green";
+            } else {
+                res.innerHTML = `<p> São <strong>${hora} </strong> Horas </p>`
+                meuElemento.style.backgroundColor = "black";
+}
+
+    </script>
+</body>
+</html>
