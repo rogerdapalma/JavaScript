@@ -1,7 +1,7 @@
 async function enviarMensagensContinuamente() {
     const mensagens = [
         "BORA", "TA PRONTO?", "VAI DEMORAR?", "VAMO LOGO", "VAMOO!!", 
-        "QUE DEMORA", "TA DEMORANDO MUITO", "ALO", "BORA", "SAIR"
+        "QUE DEMORA", "TA DEMORANDO MUITO", "ALO", "BORA", "ASSADO"
     ];
 
     const escolherMensagem = () => mensagens[Math.floor(Math.random() * mensagens.length)];
